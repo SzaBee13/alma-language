@@ -1,5 +1,5 @@
 @echo off
-set VERSION=1.1
+set VERSION=1.2
 
 if "%1"=="-v" (
     echo Alma Language v%VERSION%
