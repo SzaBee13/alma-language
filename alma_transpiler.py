@@ -20,7 +20,6 @@ def transpile_alma_to_js(alma_file, output_file):
         with open(output_file, 'w', encoding='utf-8') as f:
             f.write(js_code)
         
-        print(f"Transpiled {alma_file} to {output_file}.")
     except Exception as e:
         print(f"Error in translation: {e}")
 

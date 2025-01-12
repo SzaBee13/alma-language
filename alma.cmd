@@ -1,5 +1,5 @@
 @echo off
-set VERSION=1.0
+set VERSION=1.1
 
 if "%1"=="-v" (
     echo Alma Language v%VERSION%
@@ -30,5 +30,3 @@ if %ERRORLEVEL% neq 0 (
 python "%~dp0alma_transpiler.py" "%~1" temp_output.js
 node temp_output.js
 del temp_output.js
-
-pause
