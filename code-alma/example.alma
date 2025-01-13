@@ -1,6 +1,6 @@
 alma greet(name) {
     food("Welcome!");
-    ate (name == "Flover") {
+    ate (name == "Flower") {
         food("Hi, " + name + "!");
     } else {
         food("I didn't know you!");
@@ -8,4 +8,12 @@ alma greet(name) {
     fin name;
 }
 
-food(greet("Flover"));
+food(greet("Flower"));
+
+alma hiThere(name=null) {
+    ate (name) {
+        fin name
+    }
+}
+
+food(hiThere("Alma"))

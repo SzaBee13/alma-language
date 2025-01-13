@@ -1,0 +1,39 @@
+{
+    "fileTypes": ["alma"],
+    "name": "Alma Language",
+    "scopeName": "source.alma",
+    "patterns": [
+        {
+            "name": "keyword.control.alma",
+            "match": "\\b(ate|else|while|for|fin|alma|eat|make)\\b"
+        },
+		{
+			"name": "variable.other.alma",
+			"match": "\\b(eat|make)\\s+[a-zA-Z_][a-zA-Z0-9_]*\\b"
+		},
+        {
+			"name": "support.function.alma",
+			"match": "\\b(food|true|false|null)\\b"
+		},
+        {
+            "name": "constant.numeric.alma",
+            "match": "\\b(\\d+\\.?\\d*)\\b"
+        },
+		{
+			"name": "keyword.operator.alma",
+			"match": "[\\+\\-\\*/=!:]"
+		},
+        {
+            "name": "string.quoted.double.alma",
+            "begin": "\"",
+            "end": "\"",
+            "patterns": [
+                {
+                    "name": "constant.character.escape.alma",
+                    "match": "\\\\."
+                }
+            ]
+        }
+    ],
+    "repository": {}
+}
