@@ -1,0 +1,9 @@
+alma penis(thing) {
+    ate (thing == "pussy") {
+        fin "U ARE GAY"
+    } else ate (thing == "penis"){
+        fin "Greatt job"
+    }
+}
+
+food(penis("penis"))

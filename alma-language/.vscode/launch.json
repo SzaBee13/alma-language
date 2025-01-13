@@ -2,17 +2,13 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "Run Alma",
             "type": "node",
             "request": "launch",
-            "name": "Run Alma File",
-            "skipFiles": ["<node_internals>/**"],
-            "program": "${workspaceFolder}/alma_transpiler.py",
-            "args": [
-                "input.alma",  // Az alma fájl, amit futtatni szeretnél
-                "output.js"    // A generált JavaScript fájl
-            ],
-            "runtimeExecutable": "python",
-            "console": "integratedTerminal"
+            "runtimeExecutable": "cmd.exe",
+            "runtimeArgs": ["/c", "alma", "${file}"],
+            "console": "integratedTerminal",
+            "skipFiles": ["<node_internals>/**"]
         }
     ]
 }

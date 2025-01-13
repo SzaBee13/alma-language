@@ -43,11 +43,15 @@
         ],
         "debuggers": [
             {
-                "type": "node",
-                "label": "Run Alma Program",
-                "program": "out/alma.js",
-                "args": [
-                    "${file}"
+                "type": "alma",
+                "label": "Alma Debug",
+                "runtime": "cmd",
+                "runtimeArgs": [
+                    "/c",
+                    "alma ${file}"
+                ],
+                "languages": [
+                    "alma"
                 ]
             }
         ],
@@ -60,6 +64,6 @@
     },
     "icon": "images/icon.png",
     "devDependencies": {
-    "vscode": "^1.78.0"
+        "vscode": "^1.78.0"
     }
 }
