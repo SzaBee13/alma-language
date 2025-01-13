@@ -1,16 +1,19 @@
 [Setup]
 AppName=Alma Language
-AppVersion=1.2
+AppVersion=1.3
 DefaultDirName={pf}\AlmaLanguage
 DefaultGroupName=Alma Language
 OutputDir=Output
 OutputBaseFilename=AlmaInstaller
 Compression=lzma
 SolidCompression=yes
+AppSupportURL=https://almalang.pages.dev
+AppPublisher=SzaBee13
 
 [Languages]
-Name: "english"; MessagesFile: "compiler:Default.isl"
-Name: "hungarian"; MessagesFile: "compiler:Languages\Hungarian.isl"
+Name: "english"; MessagesFile: "compiler:Default.isl"; LicenseFile: "./eula-en.txt"
+Name: "hungarian"; MessagesFile: "compiler:Languages\Hungarian.isl"; LicenseFile: "./eula-hu.txt"
+Name: "german"; MessagesFile: "compiler:Languages\German.isl"; LicenseFile: "./eula-de.txt"
 
 [Files]
 Source: "alma.cmd"; DestDir: "{app}"; Flags: ignoreversion
