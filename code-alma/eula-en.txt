@@ -1,0 +1,5 @@
+EULA - Apple Language
+
+1. This program requires Python, which you can download here. -> https://www.python.org/downloads/
+
+2. This program requires Node.js, which you can download here. -> https://nodejs.org/en

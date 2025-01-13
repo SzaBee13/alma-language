@@ -1,0 +1,5 @@
+EULA – Alma Language - Alma Sprache
+
+1. Dieses Programm erfordert Python, das Sie hier herunterladen können. -> https://www.python.org/downloads/
+
+2. Dieses Programm erfordert Node.js, das Sie hier herunterladen können. -> https://nodejs.org/en

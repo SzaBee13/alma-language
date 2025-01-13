@@ -1,0 +1,5 @@
+EULA - Alma Language
+
+1. Ehez a programhoz szükséges Python, amit letölthet itt. -> https://www.python.org/downloads/
+
+2. Ehez a programhoz szükséges Node.js, amit letölthet itt. -> https://nodejs.org/en

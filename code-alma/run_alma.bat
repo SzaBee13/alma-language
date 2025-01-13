@@ -35,5 +35,4 @@ if %ERRORLEVEL% neq 0 (
     exit /b
 )
 
-rem Takarítás
 del "%OUTPUT_FILE%"
