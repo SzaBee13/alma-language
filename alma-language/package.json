@@ -2,7 +2,7 @@
     "name": "alma-language",
     "displayName": "Alma Language",
     "description": "A custom language for the Alma programming language.",
-    "version": "1.2.0",
+    "version": "1.2.1",
     "publisher": "SzaBee13",
     "engines": {
         "vscode": "^1.60.0"
