@@ -1,22 +1,34 @@
 import sys
+import re
 
 def transpile_alma_to_js(alma_file, output_file):
     try:
         with open(alma_file, 'r', encoding='utf-8') as f:
             alma_code = f.read()
 
-        # Konvertálások az ALMA nyelvről JavaScript-re
-        js_code = alma_code
-        js_code = js_code.replace("eat ", "let ")
-        js_code = js_code.replace("make eat ", "const")
-        js_code = js_code.replace("alma", "function")
-        js_code = js_code.replace("food(", "console.log(")
-        js_code = js_code.replace("fin", "return")
-        js_code = js_code.replace("ate", "if")
-        js_code = js_code.replace(";;;", ";")
-        js_code = js_code.replace(";;", ";")
+        # Regular expressions for replacements
+        replacements = {
+            r'\beat\b': 'let',
+            r'\bmake eat\b': 'const',
+            r'\balma\b': 'function',
+            r'\bfood\(': 'console.log(',
+            r'\bfin\b': 'return',
+            r'\bate\b': 'if',
+            r';;;': ';',
+            r';;': ';'
+        }
 
-        # Az átalakított kód mentése a temp_output.js fájlba
+        # Function to replace only outside of quotes
+        def replace_outside_quotes(match):
+            text = match.group(0)
+            for pattern, replacement in replacements.items():
+                text = re.sub(pattern, replacement, text)
+            return text
+
+        # Replace only outside of quotes
+        js_code = re.sub(r'(?:"[^"]*"|\'[^\']*\'|`[^`]*`)|[^"\'`]+', replace_outside_quotes, alma_code)
+
+        # Save the transformed code to the output file
         with open(output_file, 'w', encoding='utf-8') as f:
             f.write(js_code)
         

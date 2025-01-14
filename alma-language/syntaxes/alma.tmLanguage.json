@@ -33,6 +33,17 @@
                     "match": "\\\\."
                 }
             ]
+        },
+        {
+            "name": "string.quoted.double.alma",
+            "begin": "'",
+            "end": "'",
+            "patterns": [
+                {
+                    "name": "constant.character.escape.alma",
+                    "match": "\\\\."
+                }
+            ]
         }
     ],
     "repository": {}

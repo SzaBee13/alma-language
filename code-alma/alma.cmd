@@ -1,8 +1,13 @@
 @echo off
-set VERSION=1.3
+set VERSION=1.4
 
-if "%1"=="-v" || "%1"=="--version" (
+if "%1"=="-v" (
     echo Alma Language v%VERSION%
+    exit /b
+)
+
+if "%1"=="--version" (
+    echo Alma Language v%VERSION
     exit /b
 )
 
@@ -23,6 +28,9 @@ if %ERRORLEVEL% neq 0 (
     exit /b
 )
 
-python "%~dp0alma_transpiler.py" "%~1" temp_output.js
+python "C:\Program Files (x86)\AlmaLanguage\alma_transpiler.py" %1 temp_output.js
+if %errorlevel% neq 0 (
+    echo Error occurred during transpilation.
+)
 node temp_output.js
 del temp_output.js

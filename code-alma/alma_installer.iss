@@ -1,6 +1,6 @@
 [Setup]
 AppName=Alma Language
-AppVersion=1.3
+AppVersion=1.4
 DefaultDirName={pf}\AlmaLanguage
 DefaultGroupName=Alma Language
 OutputDir=Output

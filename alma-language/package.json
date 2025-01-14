@@ -2,7 +2,7 @@
     "name": "alma-language",
     "displayName": "Alma Language",
     "description": "A custom extension for the Alma programming language.",
-    "version": "1.2.3",
+    "version": "1.2.4",
     "publisher": "SzaBee13",
     "categories": [
         "Debuggers",
@@ -14,7 +14,7 @@
     "activationEvents": [
         "onLanguage:alma"
     ],
-    "main": "./extension.js",
+    "main": "./scr/extension.js",
     "contributes": {
         "languages": [
             {
@@ -32,12 +32,6 @@
                 }
             }
         ],
-        "commands": [
-            {
-                "command": "alma.sayHello",
-                "title": "Say Hello"
-            }
-        ],
         "grammars": [
             {
                 "language": "alma",
@@ -48,12 +42,22 @@
         "debuggers": [
             {
                 "type": "alma",
-                "label": "Alma Debug",
-                "runtime": "cmd",
-                "runtimeArgs": [
-                    "/c",
-                    "alma ${file}"
-                ],
+                "label": "Alma Debugger",
+                "program": "./src/adapter.js",
+                "runtime": "node",
+                "configurationAttributes": {
+                    "launch": {
+                        "required": [
+                            "program"
+                        ],
+                        "properties": {
+                            "program": {
+                                "type": "string",
+                                "description": "The program to debug."
+                            }
+                        }
+                    }
+                },
                 "languages": [
                     "alma"
                 ]
@@ -66,8 +70,11 @@
             }
         ]
     },
-    "icon": "images/icon.png",
+    "icon": ".images/icon.png",
     "devDependencies": {
-        "vscode": "^1.78.0"
+        "vscode": "^1.1.37"
+    },
+    "dependencies": {
+        "@vscode/debugadapter": "^1.68.0"
     }
 }
