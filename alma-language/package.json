@@ -70,7 +70,7 @@
             }
         ]
     },
-    "icon": ".images/icon.png",
+    "icon": "images/icon.png",
     "devDependencies": {
         "vscode": "^1.1.37"
     },

@@ -121,8 +121,8 @@ td > p {
     margin: 0;
 }
 
-@media screen and (max-width: 640px){
+@media screen and (max-width: 1000px){
     #container {
-        width: 100vw;
+        width: 90vw;
     }
 }
