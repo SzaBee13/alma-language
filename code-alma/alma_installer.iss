@@ -1,13 +1,16 @@
+#define MyAppVersion "1.4"
+
 [Setup]
 AppName=Alma Language
-AppVersion=1.4
+AppVersion={#MyAppVersion}
 DefaultDirName={pf}\AlmaLanguage
 DefaultGroupName=Alma Language
 OutputDir=Output
-OutputBaseFilename=AlmaInstaller
+OutputBaseFilename=alma-installer-v{#MyAppVersion}
 Compression=lzma
 SolidCompression=yes
 AppSupportURL=https://almalang.pages.dev
+AppUpdatesURL=https:///almalang.pages.dev/download
 AppPublisher=SzaBee13
 
 [Languages]

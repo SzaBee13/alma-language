@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="styles.css" />
         <link rel="icon" href="./img/logo.png" type="image/x-icon" />
         <title>Alma Language</title>
-        <!-- Open Graph meta tag-ek -->
+        <!-- Open Graph meta tag -->
         <meta property="og:title" content="Alma Language" />
         <meta
             property="og:description"
@@ -18,12 +18,12 @@
             content="https://almalang.pages.dev/img/logo.png"
         />
         <meta property="og:type" content="website" />
-        <!--Google-->
+        <!-- Google -->
         <meta
             name="description"
             content="Official site of Alma Programming Language"
         />
-        <meta name="author" content="Szabfun" />
+        <meta name="author" content="Alma Language" />
         <meta
             name="keywords"
             content="SzaBee13, alma, programming"
@@ -32,67 +32,82 @@
     </head>
     <body>
         <div id="container">
-            <div class="flex row">
-                <h1>Alma Language</h1>
-                <img src="./img/logo.png" alt="" class="alma-logo">
+            <nav>
+                <div class="logo">
+                    <a href="./index.html">
+                        <img src="./img/logo.png" alt="logo">                        
+                    </a>
+                </div>
+                <input type="checkbox" id="menu-toggle">
+                <label for="menu-toggle" class="menu-icon">&#9776;</label>
+                <ul class="navbar left">
+                    <li class="navc"><a href="./index.html">Alma Language</a></li>
+                    <li><a href="./download/index.html">Download - Versions</a></li>
+                    <li><a href="./creator/index.html">Creator</a></li>
+                    <li><a href="https://marketplace.visualstudio.com/items?itemName=SzaBee13.alma-language" target="_blank">VSCode Extension</a></li>
+                    <li><a href="https://github.com/SzaBee13/alma-language" target="_blank">Git Source Code</a></li>
+                </ul>
+            </nav>
+            <div id="content">
+                <div>
+                    <div class="flex row">
+                        <h1>Alma Language</h1>
+                        <img src="./img/logo.png" alt="" class="alma-logo">
+                    </div>
+                    <h3>Programming Language</h3>
+                    <button><a href="./AlmaInstaller.exe">Download Now</a></button>
+                    <div class="text-algin">
+                        <p>
+                            This language require <a href="https://www.python.org">Python</a> and <a href="https://nodejs.org/en">Node JS</a>.
+                            This is build on JavaScript, and all JS thing is work.
+                        </p>
+                    </div>
+                    <div class="code-editor">
+                        <pre><code class="language-alma"><span class="red">alma</span> hiThere<span class="blue">(</span>name<span class="red">=</span>null<span class="blue">)</span> <span class="blue">{</span>
+            <span class="red">ate</span> <span class="orange">(</span>name<span class="orange">)</span> <span class="orange">{</span>
+                <span class="red">fin</span> name
+            <span class="orange">}</span>
+        <span class="blue">}</span>
+        
+        <span class="blue">food(</span>hiThere<span class="orange">(</span><span class="blue">"Alma"</span><span class="orange">)</span><span class="blue">)</span></code></pre>
+                    </div>
+                    <h3>Syntax</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Alma</th>
+                                <th>JavaScript</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="red"><p>eat</p></td>
+                                <td class="red"><p>let</p></td>
+                            </tr>
+                            <tr>
+                                <td class="red"><p>make eat</p></td>
+                                <td class="red"><p>const</p></td>
+                            </tr>
+                            <tr>
+                                <td class="red"><p>alma</p></td>
+                                <td class="red"><p>function</p></td>
+                            </tr>
+                            <tr>
+                                <td class="blue"><p>food()</p></td>
+                                <td><p><span class="blue">console</span>.<span class="purple">log</span><span class="blue">()</span></p></td>
+                            </tr>
+                            <tr>
+                                <td class="red"><p>ate</p></td>
+                                <td class="red"><p>if</p></td>
+                            </tr>
+                            <tr>
+                                <td class="red"><p>fin</p></td>
+                                <td class="red"><p>return</p></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
-            <h3>Programming Language</h3>
-            <button><a href="./AlmaInstaller.exe" download="alma-installer.exe">Download Now</a></button>
-            <div class="text-algin">
-                <p>
-                    This language require <a href="https://www.python.org">Python</a> and <a href="https://nodejs.org/en">Node JS</a>.
-                    This is build on JavaScript.
-                </p>
-            </div>
-            <div class="code-editor">
-                <pre><code class="language-alma"><span class="red">alma</span> hiThere<span class="blue">(</span>name<span class="red">=</span>null<span class="blue">)</span> <span class="blue">{</span>
-    <span class="red">ate</span> <span class="orange">(</span>name<span class="orange">)</span> <span class="orange">{</span>
-        <span class="red">fin</span> name
-    <span class="orange">}</span>
-<span class="blue">}</span>
-
-<span class="blue">food(</span>hiThere<span class="orange">(</span><span class="blue">"Alma"</span><span class="orange">)</span><span class="blue">)</span></code></pre>
-            </div>
-            <h3>VSCode Extension</h3>
-            <div>
-                <p>This is a extension for vscode</p>
-            </div>
-            <button><a href="https://marketplace.visualstudio.com/items?itemName=SzaBee13.alma-language" target="_blank">Install Now</a></button>
-            <h3>Syntax</h3>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Alma</th>
-                        <th>JavaScript</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td class="red"><p>eat</p></td>
-                        <td class="red"><p>let</p></td>
-                    </tr>
-                    <tr>
-                        <td class="red"><p>make eat</p></td>
-                        <td class="red"><p>const</p></td>
-                    </tr>
-                    <tr>
-                        <td class="red"><p>alma</p></td>
-                        <td class="red"><p>function</p></td>
-                    </tr>
-                    <tr>
-                        <td class="blue"><p>food()</p></td>
-                        <td><p><span class="blue">console</span>.<span class="purple">log</span><span class="blue">()</span></p></td>
-                    </tr>
-                    <tr>
-                        <td class="red"><p>ate</p></td>
-                        <td class="red"><p>if</p></td>
-                    </tr>
-                    <tr>
-                        <td class="red"><p>fin</p></td>
-                        <td class="red"><p>return</p></td>
-                    </tr>
-                </tbody>
-            </table>
         </div>
     </body>
 </html>

@@ -7,7 +7,7 @@ if "%1"=="-v" (
 )
 
 if "%1"=="--version" (
-    echo Alma Language v%VERSION
+    echo Alma Language v%VERSION%
     exit /b
 )
 
