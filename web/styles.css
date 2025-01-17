@@ -31,6 +31,13 @@ button {
 button > a {
     text-decoration: none;
     color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button > a > img {
+    padding-left: 10px;
 }
 
 button:hover {

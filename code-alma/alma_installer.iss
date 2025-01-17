@@ -21,6 +21,7 @@ Name: "german"; MessagesFile: "compiler:Languages\German.isl"; LicenseFile: "./e
 [Files]
 Source: "alma.cmd"; DestDir: "{app}"; Flags: ignoreversion
 Source: "run_alma.bat"; DestDir: "{app}"; Flags: ignoreversion
+Source: "alma.ps1"; DestDir: "{app}"; Flags: ignoreversion
 Source: "alma_transpiler.py"; DestDir: "{app}"; Flags: ignoreversion
 Source: "logo.ico"; DestDir: "{app}"; Flags: ignoreversion
 
