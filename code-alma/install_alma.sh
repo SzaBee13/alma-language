@@ -7,6 +7,10 @@ echo "Download and Install..."
 mkdir -p "$INSTALL_DIR"
 mkdir -p "$BIN_DIR"
 
+if [ -d "$INSTALL_DIR" ]; then
+    rm -rf "$INSTALL_DIR"
+    echo "Removed old installation."
+fi
 git clone https://github.com/SzaBee13/alma-language.git "$INSTALL_DIR"
 
 echo '#!/bin/bash' > "$BIN_DIR/alma"
