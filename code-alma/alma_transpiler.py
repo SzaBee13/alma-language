@@ -1,6 +1,12 @@
 import sys
 import re
 
+VERSION = "1.4"  # <-- Ide írd a verziót!
+
+if len(sys.argv) == 2 and sys.argv[1] in ("-v", "--version"):
+    print(f"Alma Language v{VERSION}")
+    sys.exit(0)
+
 def transpile_alma_to_js(alma_file, output_file):
     try:
         with open(alma_file, 'r', encoding='utf-8') as f:

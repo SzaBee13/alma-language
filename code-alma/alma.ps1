@@ -27,3 +27,4 @@ if ($LASTEXITCODE -ne 0) {
 
 # Lefuttatja a Node.js fájlt
 node "temp_output.js"
+del "temp_output.js"
