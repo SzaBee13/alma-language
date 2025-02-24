@@ -2,7 +2,7 @@
     "name": "alma-language",
     "displayName": "Alma Language",
     "description": "A custom extension for the Alma programming language.",
-    "version": "1.2.4",
+    "version": "1.2.5",
     "publisher": "SzaBee13",
     "categories": [
         "Debuggers",
