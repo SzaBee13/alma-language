@@ -3,31 +3,69 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+        <meta name="googlebot" content="index, follow" />
+        <link rel="canonical" href="https://alma.szabee.me" />
         <link rel="stylesheet" href="styles.css" />
         <link rel="icon" href="./img/logo.png" type="image/x-icon" />
-        <title>Alma Language</title>
-        <!-- Open Graph meta tag -->
-        <meta property="og:title" content="Alma Language" />
-        <meta
-            property="og:description"
-            content="Official site of Alma Programming Language"
-        />
-        <meta property="og:url" content="https://almalang.pages.dev" />
-        <meta
-            property="og:image"
-            content="https://almalang.pages.dev/img/logo.png"
-        />
-        <meta property="og:type" content="website" />
-        <!-- Google -->
+        <title>Alma Language - Modern Programming Language Built on JavaScript</title>
+        
+        <!-- SEO Meta Tags -->
         <meta
             name="description"
-            content="Official site of Alma Programming Language"
+            content="Alma Language is an intuitive programming language built on JavaScript. Learn the unique syntax, download the latest version, and start coding with Alma today."
         />
         <meta name="author" content="Alma Language" />
         <meta
             name="keywords"
-            content="SzaBee13, alma, programming"
+            content="Alma programming language, JavaScript-based language, learn to code, open source programming, SzaBee13"
         />
+        <meta name="language" content="English" />
+        <meta name="revisit-after" content="7 days" />
+        
+        <!-- Open Graph Meta Tags for Social Media -->
+        <meta property="og:title" content="Alma Language - Modern Programming Language Built on JavaScript" />
+        <meta
+            property="og:description"
+            content="Alma Language is an intuitive programming language built on JavaScript. Learn the unique syntax, download the latest version, and start coding with Alma today."
+        />
+        <meta property="og:url" content="https://alma.szabee.me" />
+        <meta property="og:image" content="https://alma.szabee.me/img/logo.png" />
+        <meta property="og:image:alt" content="Alma Language Logo" />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Alma Language" />
+        
+        <!-- Twitter Card Meta Tags -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Alma Language - Modern Programming Language Built on JavaScript" />
+        <meta name="twitter:description" content="Learn Alma - an intuitive programming language built on JavaScript. Download now and start coding." />
+        <meta name="twitter:image" content="https://alma.szabee.me/img/logo.png" />
+        
+        <!-- Structured Data (JSON-LD Schema.org) -->
+        <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "SoftwareApplication",
+          "name": "Alma Language",
+          "description": "Alma Language is an intuitive programming language built on JavaScript. It provides a unique syntax while maintaining full JavaScript compatibility.",
+          "url": "https://alma.szabee.me",
+          "image": "https://alma.szabee.me/img/logo.png",
+          "applicationCategory": "DeveloperApplication",
+          "author": {
+            "@type": "Person",
+            "name": "SzaBee13",
+            "url": "https://szabee13.pages.dev"
+          },
+          "operatingSystem": ["Windows", "macOS", "Linux"],
+          "requirements": "Python and Node.js",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+          }
+        }
+        </script>
+        
         <style type="text/css" id="operaUserStyle"></style>
     </head>
     <body>
@@ -43,7 +81,7 @@
                 <ul class="navbar left">
                     <li class="navc"><a href="./index.html">Alma Language</a></li>
                     <li><a href="./download/index.html">Download - Versions</a></li>
-                    <li><a href="https://szabee13.pages.dev" target="_blank">Creator</a></li>
+                    <li><a href="https://szabee.me" target="_blank">Creator</a></li>
                     <li><a href="https://marketplace.visualstudio.com/items?itemName=SzaBee13.alma-language" target="_blank">VSCode Extension</a></li>
                     <li><a href="https://github.com/SzaBee13/alma-language" target="_blank">Git Source Code</a></li>
                 </ul>
@@ -51,18 +89,19 @@
             <div id="content">
                 <div>
                     <div class="flex row">
-                        <h1>Alma Language</h1>
-                        <img src="./img/logo.png" alt="" class="alma-logo">
+                        <h1>Alma Language - Modern Programming Language</h1>
+                        <img src="./img/logo.png" alt="Alma Language Logo - Programming Language Built on JavaScript" class="alma-logo">
                     </div>
-                    <h3>Programming Language</h3>
+                    <h2>Intuitive Syntax. Powerful Capabilities.</h2>
                     <button><a href="./download/index.html">Download Now</a></button>
                     <div class="text-algin">
                         <p>
-                            This language require <a href="https://www.python.org">Python</a> and <a href="https://nodejs.org/en">Node JS</a>.
-                            This is build on JavaScript, and all JS thing is work.
+                            Alma Language is built on JavaScript and requires <a href="https://www.python.org" title="Python Programming Language">Python</a> and <a href="https://nodejs.org/en" title="Node.js - JavaScript Runtime">Node JS</a>.
+                            It provides a unique, intuitive syntax while maintaining full JavaScript compatibility—all your favorite JavaScript features work seamlessly with Alma.
                         </p>
                     </div>
                     <div class="code-editor">
+                        <p><strong>Example Code:</strong></p>
 <pre><code class="language-alma"><span class="red">alma</span> hiThere<span class="blue">(</span>name<span class="red">=</span>null<span class="blue">)</span> <span class="blue">{</span>
     <span class="red">ate</span> <span class="orange">(</span>name<span class="orange">)</span> <span class="orange">{</span>
         <span class="red">fin</span> name
@@ -71,7 +110,8 @@
         
 <span class="blue">food(</span>hiThere<span class="orange">(</span><span class="blue">"Alma"</span><span class="orange">)</span><span class="blue">)</span></code></pre>
                     </div>
-                    <h3>Syntax</h3>
+                    <h2>Syntax Comparison</h2>
+                    <p>Alma provides an intuitive alternative to standard JavaScript syntax while maintaining full compatibility:</p>
                     <table>
                         <thead>
                             <tr>

@@ -1,0 +1,65 @@
+# robots.txt for Alma Language
+# Allow all search engines and AI bots to crawl the site
+
+User-agent: *
+Allow: /
+Disallow: 
+
+# Specific rules for common search engines and AI bots
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+# AI Search Bots
+User-agent: GPTBot
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: Perplexity
+Allow: /
+
+User-agent: ImagesiftBot
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+User-agent: Googlebot-Extended
+Allow: /
+
+User-agent: AdsBot-Google
+Allow: /
+
+# Sitemap location
+Sitemap: https://almalang.pages.dev/sitemap.xml
+
+# Crawl delay (optional - adjust as needed)
+Crawl-delay: 1
