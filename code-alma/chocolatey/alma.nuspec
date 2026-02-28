@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>alma</id>
+    <version>1.4.0</version>
+    <packageSourceUrl>https://github.com/SzaBee13/alma</packageSourceUrl>
+    <owners>SzaBee13</owners>
+    <title>Alma Language</title>
+    <authors>SzaBee13</authors>
+    <projectUrl>https://almalang.pages.dev</projectUrl>
+    <iconUrl>https://almalang.pages.dev/img/logo.png</iconUrl>
+    <copyright>2024 SzaBee13</copyright>
+    <licenseUrl>https://almalang.pages.dev</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/SzaBee13/alma</projectSourceUrl>
+    <docsUrl>https://almalang.pages.dev</docsUrl>
+    <tags>alma programming-language transpiler javascript python</tags>
+    <summary>Alma is a simple programming language that transpiles to JavaScript</summary>
+    <description>
+# Alma Language
+
+Alma is a programming language that transpiles to JavaScript with a simplified syntax.
+
+## Features
+
+- Simple syntax similar to JavaScript
+- Transpiles to JavaScript
+- Easy to learn and use
+- File association for .alma files
+
+## Syntax Overview
+
+- `alma` = function
+- `eat` = let
+- `make eat` = const
+- `ate` = if
+- `food()` = console.log()
+- `fin` = return
+
+## Requirements
+
+- Python 3.x (installed automatically as dependency)
+- Node.js (for running transpiled JavaScript)
+
+## Usage
+
+After installation, you can run Alma files with:
+```
+alma yourfile.alma
+```
+
+Or check the version:
+```
+alma -v
+```
+    </description>
+    <releaseNotes>https://almalang.pages.dev/download</releaseNotes>
+    <dependencies>
+      <dependency id="python" version="3.8.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
